@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <title>Wedding Image Viewer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Outfit:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    :root {
+      --bg: #faf3f3;
+      --bg-soft: #f4e4e6;
+      --ink: #2b181a;
+      --ink-soft: #70585a;
+      --gold: #d4b082;
+      --dark: #7a1d25;
+      --line: #ebd6d8;
+      --transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      padding: 40px 20px;
+    }
+
+    h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.5rem;
+      font-weight: 600;
+      text-align: center;
+      margin-bottom: 8px;
+      letter-spacing: 0.05em;
+      color: var(--dark);
+    }
+
+    .subtitle {
+      text-align: center;
+      color: var(--ink-soft);
+      font-size: 0.95rem;
+      margin-bottom: 40px;
+      font-weight: 300;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 24px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .card {
+      border: 1px solid var(--line);
+      padding: 16px;
+      border-radius: 20px;
+      background: #ffffff;
+      text-align: center;
+      box-shadow: 0 10px 25px rgba(122, 29, 37, 0.04);
+      transition: var(--transition);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      overflow: hidden;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 35px rgba(122, 29, 37, 0.1);
+      border-color: var(--gold);
+    }
+
+    h3 {
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--ink-soft);
+      word-break: break-all;
+      margin-bottom: 12px;
+      background: var(--bg-soft);
+      padding: 6px 12px;
+      border-radius: 10px;
+    }
+
+    .img-container {
+      width: 100%;
+      height: 250px;
+      border-radius: 12px;
+      overflow: hidden;
+      background: var(--bg-soft);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: var(--transition);
+    }
+
+    .card:hover img {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <h1>Image Gallery Viewer</h1>
+  <p class="subtitle">Wedding Invitation Assets Preview</p>
+  
+  <div class="grid">
+    <div class="card">
+      <h3>5bad5ee2-cffe-46dd-af89-ef1a37cb1e40.jpg</h3>
+      <div class="img-container">
+        <img src="img/5bad5ee2-cffe-46dd-af89-ef1a37cb1e40.jpg" onerror="this.src='../Wedding/img/5bad5ee2-cffe-46dd-af89-ef1a37cb1e40.jpg'">
+      </div>
+    </div>
+    <div class="card">
+      <h3>5e862d4e-5380-4039-856a-a49eed60cc39.jpg</h3>
+      <div class="img-container">
+        <img src="img/5e862d4e-5380-4039-856a-a49eed60cc39.jpg" onerror="this.src='../Wedding/img/5e862d4e-5380-4039-856a-a49eed60cc39.jpg'">
+      </div>
+    </div>
+    <div class="card">
+      <h3>5f340eef-3387-41b6-a172-1fad42da7369.jpg</h3>
+      <div class="img-container">
+        <img src="img/5f340eef-3387-41b6-a172-1fad42da7369.jpg" onerror="this.src='../Wedding/img/5f340eef-3387-41b6-a172-1fad42da7369.jpg'">
+      </div>
+    </div>
+    <div class="card">
+      <h3>a96d1876-76e1-4491-b19c-12bf933514a7.jpg</h3>
+      <div class="img-container">
+        <img src="img/a96d1876-76e1-4491-b19c-12bf933514a7.jpg" onerror="this.src='../Wedding/img/a96d1876-76e1-4491-b19c-12bf933514a7.jpg'">
+      </div>
+    </div>
+    <div class="card">
+      <h3>b18f06ea-5b95-43c7-abd0-b705b9b2acb3.jpg</h3>
+      <div class="img-container">
+        <img src="img/b18f06ea-5b95-43c7-abd0-b705b9b2acb3.jpg" onerror="this.src='../Wedding/img/b18f06ea-5b95-43c7-abd0-b705b9b2acb3.jpg'">
+      </div>
+    </div>
+    <div class="card">
+      <h3>canhan.jpg</h3>
+      <div class="img-container">
+        <img src="img/canhan.jpg" onerror="this.src='../Wedding/img/canhan.jpg'">
+      </div>
+    </div>
+    <div class="card">
+      <h3>canhan2.jpg</h3>
+      <div class="img-container">
+        <img src="img/canhan2.jpg" onerror="this.src='../Wedding/img/canhan2.jpg'">
+      </div>
+    </div>
+    <div class="card">
+      <h3>e46f4c5b-4193-4230-885a-864be2fa1a0c.jpg</h3>
+      <div class="img-container">
+        <img src="img/e46f4c5b-4193-4230-885a-864be2fa1a0c.jpg" onerror="this.src='../Wedding/img/e46f4c5b-4193-4230-885a-864be2fa1a0c.jpg'">
+      </div>
+    </div>
+    <div class="card">
+      <h3>ee2b04f3-0d11-47a0-aefe-95591bf09a75.jpg</h3>
+      <div class="img-container">
+        <img src="img/ee2b04f3-0d11-47a0-aefe-95591bf09a75.jpg" onerror="this.src='../Wedding/img/ee2b04f3-0d11-47a0-aefe-95591bf09a75.jpg'">
+      </div>
+    </div>
+    <div class="card">
+      <h3>faefe75c-1f32-49ca-b13f-0079a53590c2.jpg</h3>
+      <div class="img-container">
+        <img src="img/faefe75c-1f32-49ca-b13f-0079a53590c2.jpg" onerror="this.src='../Wedding/img/faefe75c-1f32-49ca-b13f-0079a53590c2.jpg'">
+      </div>
+    </div>
+  </div>
+</body>
+</html>
