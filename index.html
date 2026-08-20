@@ -1782,7 +1782,7 @@
     <!-- Music Player Floating Button -->
     <audio
       id="bgm"
-      src="img/Cưới Nhau Đi Yes I Do Bùi Anh Tuấn Hiền Hồ 100 cặp cô dâu chú rể Gala Nhạc Việt.mp3"
+      src="img/nhacdamcuoi.mp3"
       loop
       preload="auto"
       playsinline
@@ -1880,8 +1880,8 @@
         if (bgm) {
           bgm.addEventListener("error", function () {
             const currentSrc = bgm.getAttribute("src");
-            if (currentSrc === "img/Cưới Nhau Đi Yes I Do Bùi Anh Tuấn Hiền Hồ 100 cặp cô dâu chú rể Gala Nhạc Việt.mp3") {
-              bgm.src = "../Wedding/" + currentSrc;
+            if (currentSrc === "img/nhacdamcuoi.mp3" || currentSrc.endsWith("nhacdamcuoi.mp3")) {
+              bgm.src = "../Wedding/img/Cưới Nhau Đi Yes I Do Bùi Anh Tuấn Hiền Hồ 100 cặp cô dâu chú rể Gala Nhạc Việt.mp3";
               bgm.load();
             } else if (currentSrc.indexOf("../Wedding/") !== -1) {
               bgm.src = "https://res.cloudinary.com/dhh1s5nfa/video/upload/v1710321356/beautiful_in_white_instr.mp3";
